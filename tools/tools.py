@@ -75,6 +75,8 @@ class TargetEncoder(object):
         return means.to_dict()
 
     def fit(self, X, y):
+        if y is None:
+            raise ValueError("y cannot be None. Please provide numeric labels.")
         if len(X) != len(y):
             raise ValueError("X and y must have the same number of observations.")
 
