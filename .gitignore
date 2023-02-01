@@ -130,3 +130,6 @@ dmypy.json
 
 # Emacs backup file cluttering
 *.py~
+
+# Catboost
+/catboost_info/
